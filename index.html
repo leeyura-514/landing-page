@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <!-- BEM방법론 적용 -->
+    <header class="header" data-background="#005cff" id="#header">
+        <div class="cont-wrap">
+            <div class="logo">
+                <h1 class="blind">Portfolio</h1>
+                <div class="logo__inner">
+                    <svg viewBox="0 0 150 150" class="logo__svg">
+                        <path fill="transparent" id="curve" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"></path>
+                        <text class="spin spin--first">
+                            <textPath xlink:href="#curve">PORTFOLIO</textPath>
+                        </text>
+                        <text class="spin spin--first" transform="rotate(120 75 75)">
+                            <textPath xlink:href="#curve">PORTFOLIO</textPath>
+                        </text>
+                        <text class="spin spin--first" transform="rotate(240 75 75)">
+                            <textPath xlink:href="#curve">PORTFOLIO</textPath>
+                        </text>
+                    </svg>
+                    <img src="./asset/images/icon/intro-icon1.png" alt="로고이모지" class="logo__img">
+                </div>
+                <p data-up class="logo__desc">Lee Yura</p>
+            </div>
+          
+        </div>
+
+        <div class="guage">
+            <!-- 독립적인 영역이라 guage__gnb로 적지않음 -->
+            <nav class="gnb">
+                <ul class="gnb__list">
+                    <li class="gnb__item"><a href="#header">Intro</a></li>
+                    <li class="gnb__item"><a href="#main">Me</a></li>
+                    <li class="gnb__item"><a href="#works">Works</a></li>
+                    <li class="gnb__item"><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <span class="guage__curr"></span>
+            <div class="line">
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="main">
+        <section class="sc-introduce" data-background="#0054bf">
+            <div class="cont-wrap">
+                <div class="introduce-wrap">
+                    <div data-up class="introduce-box introduce-box__item01">
+                        <img src="./asset/images/content/Frame 10291.png" alt="시계 이미지">
+                        <p class="desc">#Communication, 의사소통 원활</p>
+                    </div>
+                    <div data-up class="introduce-box introduce-box__item02">
+                        <img src="./asset/images/content/Frame 10292.png" alt="근육 이미지">
+                        <p class="desc">#Passion, 직종변경 도전정신</p>
+                    </div>
+                    <div data-up class="introduce-box introduce-box__item03">
+                        <img src="./asset/images/content/Frame 10293.png" alt="이모티콘 이미지">
+                        <p class="desc">#Essential, 한 직장에서 3년간 근무</p>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-work" id="works" data-background="#003476">
+            <div class="cont-wrap">
+                <div class="cont-box">
+                    <img data-up src="./asset/images/content/cont01.png" alt="hello 이미지" class="img img__item01">
+                    <img data-up src="./asset/images/content/cont02.png" alt="손동작(브이) 이미지" class="img img__item02">
+                    <img data-up src="./asset/images/content/cont03.png" alt="손동작(하트) 이미지" class="img img__item03">
+                    <a href="https://leeyura-514.github.io/work5/" class="work-item">
+                        <span data-up class="work-item__text">Hybe
+                            <span class="line-bottom"></span>
+                            <div class="badge">반응형</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work6/" class="work-item">
+                        <span data-up class="work-item__text">Com2us
+                            <span class="line-bottom"></span>
+                            <div class="badge">반응형</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work4/" class="work-item">
+                        <span data-up class="work-item__text">Card Gorilla
+                            <span class="line-bottom"></span>
+                            <div class="badge">반응형</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work03/" class="work-item">
+                        <span data-up class="work-item__text">Innisfree
+                            <span class="line-bottom"></span>
+                            <div class="badge">적응형 PC</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work2/" class="work-item">
+                        <span data-up class="work-item__text">Andar
+                            <span class="line-bottom"></span>
+                            <div class="badge">적응형 모바일</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work1/" class="work-item">
+                        <span data-up class="work-item__text">Seoul City Hall
+                            <span class="line-bottom"></span>
+                            <div class="badge">적응형 PC</div>
+                        </span>
+                    </a>
+                    <a href="https://leeyura-514.github.io/work0/" class="work-item">
+                        <span data-up class="work-item__text">Naver
+                            <span class="line-bottom"></span>
+                            <div class="badge">적응형 PC</div>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+     
+    </main>
+
+    <footer class="footer-area" id="footer" data-background="#000c1a">
+        <div class="cont-wrap">
+            <div class="cont-box">
+                <strong data-up class="title">For now :</strong>
+                <p data-up class="desc">Contact Me<span class="line-bottom"></span></p>
+            </div>
+            <div data-up class="img-box"><img src="./asset/images/content/footter-icon.png" alt="전화이미지"></div>
+        </div>
+    </footer>
+    
+    
+
+
+
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script defer src="./asset/js/common.js"></script>
+    <script defer src="./asset/js/main.js"></script>
+
+
+
+
+</body>
+</html>

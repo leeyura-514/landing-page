@@ -1,0 +1,132 @@
+.sc-introduce{
+    width: 100%;
+    color: $color-white;
+    padding: 40vh 0;
+    .introduce-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px 0 140px;
+        text-align: center;
+        color: #222;
+        .introduce-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #fff;
+            width: 579px;height: 100px;
+            margin-bottom: 24px;
+            border-radius: 30px;
+            box-shadow: 0.1em 0.2em 0.7em rgba(23, 29, 104, 0.9);
+            &__item01{
+                margin-right: 238px;
+            }
+            &__item02{
+                margin-left: 238px;
+            }
+            &__item03{
+                margin-right: 238px;
+            }
+        }
+        img{
+            margin-right: 19.6px;
+            width: 80px;
+            height: 80px;
+        }
+        .desc{
+            font-size: 20px;
+           
+          
+        }
+    }
+  
+}//sc-introduce
+
+.sc-work{
+    width: 100%;
+    position: relative;
+    color: #fff;
+    .cont-box{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        .img{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: 10;
+            &__item01{
+                top:-20vh;
+                left: 40vh;
+                transform: rotate(-16.158deg);
+            }
+            &__item02{
+                right: 20vh;
+                top:6vh;
+                transform: rotate(16.158deg);
+            }
+            &__item03{
+                bottom:-5vh;
+                left: 40vh;
+                transform: rotate(-12.158deg);
+
+            }
+
+        }//img
+    }//cont-box
+    .work-item{
+        display: block;
+        margin-bottom: 35px;
+        &__text{
+            text-align: center;
+            line-height: 10vh;
+            font-size: 11vh;
+            letter-spacing: -5px;
+            display: inline-block;
+            position: relative;
+            margin-right: 60px;
+            .line-bottom{
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0%;
+                height: 1.5px;
+                background: #fff;
+                transition: .3s;
+                &.hover{
+                    width: 100%;
+                }
+            }
+            .badge{
+                display: inline-block;
+                position: absolute;
+                right: -8.5em;
+                top: -.6em;
+                display: flex;
+                justify-content: center;
+                white-space: nowrap;
+                border-radius: 70px;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                box-shadow: 0.1em 0.2em 0.7em rgba(23, 29, 104, 0.9);
+                // opacity: .7; 적용할 경우 글씨까지 모두 투명해짐 
+                // > @@ backdrop-filter로 배경만 blur적용
+                backdrop-filter: blur(10px);
+                background-color: hsla(0,0%,100%,.35);
+                color: #fff;
+                font-weight: bold;
+                line-height: 3vh;
+                font-size: 3vh;
+                min-width: 180px;
+                max-width: 180px;
+                padding: .7em 1em;
+                letter-spacing: -1px;
+            }//badge
+        }//text
+    }//work-item
+  
+}//sc-work
+
+
+

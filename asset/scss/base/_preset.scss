@@ -1,0 +1,110 @@
+// common의 용도
+body{
+    font-family: 'Mono', 'Pretendard' ;
+    min-width: 1024px;
+}
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+::-webkit-scrollbar {
+    width: 5px;  /* 세로축 스크롤바 길이 */
+    height: 5px;  /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track-piece {
+background-color: transparent;//스크롤바 배경색
+}
+::-webkit-scrollbar-thumb {
+border-radius: 8px;
+background: $color-green;
+}
+
+
+
+.cont-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+//@@높이 0 에서 증가
+.guage{
+    position: fixed;
+    top: 0;left: 0;
+    width: 1px;
+    background: rgba(#fff, 0.2);
+    height: calc(100% - 40px);
+    margin: 20px;
+    color: #fff;
+    z-index: 10;
+
+    &__curr{
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 1px;
+        width: 2px;
+        height: 0px;
+
+    }
+    .gnb{
+        height: 100%;
+        &__list{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+        &__item{
+            display: flex;
+            a{
+                white-space: nowrap;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 50%;
+                    vertical-align: 3px;
+                    margin-right: 5px;
+                }
+            }
+          
+        }
+    }//gnb
+    .line{
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;//펼쳐짐 적용
+        opacity: .7;
+        span{
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            &.long{
+                width: 20px;
+
+            }
+
+        }
+
+    }//line
+
+}
